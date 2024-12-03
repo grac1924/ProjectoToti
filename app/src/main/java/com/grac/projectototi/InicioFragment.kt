@@ -48,7 +48,8 @@ class InicioFragment() : Fragment() {
         Toast.makeText(context, errorMessage, Toast.LENGTH_SHORT).show()
     }
 
-    companion object{
+    companion object {
+
         fun newInstance(): InicioFragment {
             return InicioFragment()
         }

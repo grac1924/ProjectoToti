@@ -24,10 +24,6 @@ class TarefasFragment() : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         et = view.findViewById(R.id.ed_Usuario)
 
-    }
-}
-
-
 //        val name = context. let {  }
 //
 //        val personaString = "$name"
@@ -35,3 +31,7 @@ class TarefasFragment() : Fragment() {
 //        val ed_Usuario = et.text
 //
 //        et.text = personaString
+    }
+}
+
+
