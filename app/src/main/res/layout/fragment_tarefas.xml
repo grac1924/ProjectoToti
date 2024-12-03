@@ -1,14 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="15dp"
     android:orientation="vertical"
-    android:id="@+id/tarefasFragment"
-    tools:context=".TarefasFragment">
+    tools:context=".MainActivity2">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="18dp"
+        android:clickable="true"
+        android:elevation="3dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAllCaps="true"
+        app:srcCompat="@drawable/add_tarefa" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvtarefas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="@string/tarefas"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ed_Usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nome_de_usuario"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/etmercado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtarefas"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/mercado"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/ettenamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etmercado"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/trenamento"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/etlazer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ettenamento"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/lazer"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bt_entre_tarefa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="64dp"
+        android:elevation="3dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/entre_tarefa"
+        android:textAllCaps="true" />
 
 
 </RelativeLayout>

@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 
 class TarefasFragment() : Fragment() {
@@ -18,18 +17,21 @@ class TarefasFragment() : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.activity_main2, container, false)
+        return inflater.inflate(R.layout.fragment_tarefas, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         et = view.findViewById(R.id.ed_Usuario)
-        val name = context. let {  }
 
-        val personaString = "$name"
-
-        val ed_Usuario = et.text
-
-        et.text = personaString
     }
 }
+
+
+//        val name = context. let {  }
+//
+//        val personaString = "$name"
+//
+//        val ed_Usuario = et.text
+//
+//        et.text = personaString

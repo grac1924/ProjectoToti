@@ -34,7 +34,11 @@ class InicioFragment() : Fragment() {
                     showErrorMessage(valor)
                 }
             } else {
-
+                val tarefasFragment = newInstance()
+                parentFragmentManager.beginTransaction()
+                    .replace(R.id.fcv_main_activity, tarefasFragment)
+                    .addToBackStack(null)
+                    .commit()
             }
         }
     }
@@ -42,6 +46,12 @@ class InicioFragment() : Fragment() {
     private fun showErrorMessage(context: Context) {
         val errorMessage = context.getString(R.string.errorMessage)
         Toast.makeText(context, errorMessage, Toast.LENGTH_SHORT).show()
+    }
+
+    companion object{
+        fun newInstance(): InicioFragment {
+            return InicioFragment()
+        }
     }
 }
 
