@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.grac.projectototi.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/fragment_inicio" />
+    <action
+        android:id="@+id/action_activity_to_tarefasFragment"
+        app:destination="@+id/mainActivity"/>
+
+    <fragment
+        android:id="@+id/tarefasFragment"
+        android:name="com.grac.projectototi.TarefasFragment"
+        android:label="fragment_tarefas"
+        tools:layout="@layout/fragment_tarefas" >
+
+
+
+    </fragment>
+</navigation>

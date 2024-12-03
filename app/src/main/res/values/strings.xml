@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ProjectoToti</string>
+    <string name="title">Gerenciador de tarefas</string>
+    <string name="ed_dsn">Digite seu nome</string>
+    <string name="bt_entre">Entre</string>
+    <string name="errorMessage">Digite seu nome</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tarefas">Tarefas</string>
+    <string name="nome_de_usuario">nome de usuario</string>
+    <string name="mercado">Mercado</string>
+    <string name="trenamento">Trenamento</string>
+    <string name="lazer">lazer</string>
+    <string name="entremercado">Entre</string>
+    <string name="trenamentoentre">Entre</string>
+    <string name="Lazerentre">Entre</string>
+    <string name="entre_tarefa">Entre</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
